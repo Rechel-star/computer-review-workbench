@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#244ce4">
+  <meta name="description" content="五个板块、1331道选择题，包含知识详解与逐点例题的计算机考试复习工作台">
+  <title>知序 · 计算机复习工作台</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">跳到主要内容</a>
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#home"><span class="brand-icon">知</span><span><b>知序</b><small>计算机复习工作台</small></span></a>
+    <span class="nav-label">我的复习</span>
+    <nav aria-label="主要导航">
+      <a data-page="home" href="#home"><span>◫</span>学习总览</a>
+      <a data-page="learn" href="#learn"><span>▤</span>知识图谱</a>
+      <a data-page="practice" href="#practice"><span>▧</span>章节练习</a>
+      <a data-page="mock" href="#mock"><span>◷</span>随机自测</a>
+      <a data-page="wrong" href="#wrong"><span>↺</span>我的错题<b id="nav-wrong">0</b></a>
+      <a data-page="saved" href="#saved"><span>☆</span>我的收藏</a>
+    </nav>
+    <span class="nav-label">知识板块</span>
+    <div id="chapter-nav"></div>
+    <div class="side-bottom"><span class="local-dot"></span>进度保存在当前浏览器<a href="#settings">记录管理与资料 ↗</a></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar">
+      <button class="icon-button menu-toggle" data-action="menu" aria-label="打开导航" aria-expanded="false">☰</button>
+      <div class="breadcrumb">计算机专业知识 <span>/</span> <b id="page-label">学习总览</b></div>
+      <div class="top-right"><button class="search-button" data-action="search"><span>⌕</span> 搜索知识与题目 <kbd>Ctrl K</kbd></button><span class="avatar" aria-label="个人复习">学</span></div>
+    </header>
+    <main id="main" tabindex="-1"><div class="loading"><span>内容加载中…</span><p>正在准备五个板块的讲义与1331道题。</p></div></main>
+    <footer>广覆盖 · 重概念 · 练辨析 <span>专业知识 70% · 原创练习</span></footer>
+  </div>
+  <dialog id="search-dialog">
+    <div class="dialog-head"><h2>搜索知识与题目</h2><button data-action="close-search" class="icon-button" aria-label="关闭搜索">×</button></div>
+    <label class="sr-only" for="search-input">关键词</label><input id="search-input" type="search" placeholder="输入术语、题号或关键词，例如 TCP、A001…" autocomplete="off">
+    <div id="search-results" class="search-results" aria-live="polite"></div>
+  </dialog>
+  <dialog id="confirm-dialog"><div class="dialog-head"><h2 id="confirm-title"></h2></div><p id="confirm-text"></p><div class="buttons"><button class="button secondary" data-action="cancel-confirm">取消</button><button class="button" data-action="confirm">确认</button></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <input type="file" id="import-file" accept=".json,application/json" hidden>
+  <script src="content.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
