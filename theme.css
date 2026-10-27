@@ -1,0 +1,38 @@
+.prose .point-detail p{font-size:16px;line-height:1.95}
+.knowledge-item{scroll-margin-top:90px}
+.question-stem{line-height:1.75;overflow-wrap:anywhere}
+.question-meta{flex-wrap:wrap;align-items:flex-start;line-height:1.8;gap:12px}
+.question-meta>span{flex:1;min-width:180px}
+.topic-list{max-height:calc(100vh - 160px)}
+.topic-list h3{padding-top:20px}
+.topic-item{font-size:13px;line-height:1.6}
+.sidebar nav a{gap:9px}
+.sidebar .chapter-nav-link{padding-top:7px;padding-bottom:7px;font-size:12px}
+.side-bottom{margin-top:15px}
+.hero-copy h2{line-height:1.6}
+.hero-copy .buttons{flex-wrap:wrap}
+.question-map>.text-button{display:block;margin-top:18px}
+.jump-controls{display:flex;gap:8px;margin:14px 0}
+.jump-controls input{width:90px;min-width:0;border:1px solid #dce3f0;border-radius:8px;padding:9px 10px;font:inherit;color:inherit}
+.memorize-controls{margin-top:24px;flex-wrap:wrap}
+.hidden-answer{padding:24px;background:#f3f6fc;color:#4c6086;border-radius:10px}
+.multi-tip{margin:0 0 20px}
+.collection-actions{margin-bottom:24px;flex-wrap:wrap}
+.explanation h3{line-height:1.8;overflow-wrap:anywhere}
+.explanation p{line-height:1.9}
+.search-result{display:block;width:100%;text-align:left;border:0;background:#fff;cursor:pointer;font:inherit}
+.search-result small{display:block}
+.panel-pad .buttons{flex-wrap:wrap}
+.question-actions{flex-wrap:wrap;gap:14px}
+.list-row .progress-track{width:120px}
+.question-map .map-grid{max-height:320px}
+.question-card,.reading{min-width:0}
+.option{min-height:48px}
+.option>span:nth-child(2){min-width:0;overflow-wrap:anywhere}
+.point-feedback,.explanation{overflow-wrap:anywhere}
+.stat-label{font-size:12px}
+@media(max-width:1150px){.learn-layout{grid-template-columns:250px minmax(0,1fr)}}
+@media(max-width:900px){.question-map .map-grid{max-height:180px}.learn-layout{grid-template-columns:240px minmax(0,1fr)}}
+@media(max-width:760px){.learn-layout{grid-template-columns:1fr}.topic-list{position:static;max-height:250px}.prose .point-detail p{font-size:15px}.reading{padding:24px 20px}}
+@media(max-width:650px){.question-card{padding:22px 18px}.question-stem{font-size:18px}.option{font-size:15px}.question-meta{font-size:12px}.result-symbol{font-size:11px}.question-actions .button{font-size:12px}.content-update{align-items:flex-start;flex-direction:column}.hero-copy h2{font-size:24px}.stat-value{font-size:26px}.chapter-info p{line-height:1.7}.topbar .breadcrumb{font-size:11px}}
+@media print{.sidebar,.topbar,footer,.question-map,.question-actions,.memorize-controls,.buttons,.point-example,.topic-list{display:none!important}.workspace{margin:0}.reading{box-shadow:none;border:0}.learn-layout{display:block}.knowledge-item{break-inside:avoid}}
